@@ -10,6 +10,6 @@ Universitas Gadjah Mada, Indonesia
 
 # Catatan
 Anggota Kelompok
-- Fachrizal Bayu Nugroho (19/446775/TK/49880)
-Tidak ikut berpatisipasi aktif dalam mengerjakan project ini.
+- Fachrizal Bayu Nugroho (19/446775/TK/49880)\
+Tidak ikut berpatisipasi aktif dalam mengerjakan project ini.\
 Tidak berkontribusi sedikitpun pada project ini.
