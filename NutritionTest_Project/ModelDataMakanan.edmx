@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="DataMakananModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityType Name="TableMakanan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="NamaMakanan" Type="nvarchar(max)" />
+          <Property Name="Kalori" Type="nvarchar(max)" />
+          <Property Name="Protein" Type="nvarchar(max)" />
+          <Property Name="Karbohidrat" Type="nvarchar(max)" />
+          <Property Name="Lemak" Type="nvarchar(max)" />
+          <Property Name="Vitamin" Type="nvarchar(max)" />
+          <Property Name="Berat" Type="nvarchar(max)" />
+        </EntityType>
+        <EntityContainer Name="DataMakananModelStoreContainer">
+          <EntitySet Name="TableMakanan" EntityType="Self.TableMakanan" Schema="dbo" store:Type="Tables" />
+        </EntityContainer>
+      </Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="DataMakananModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="ConnectDataMakanan" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="TableMakanans" EntityType="DataMakananModel.TableMakanan" />
+        </EntityContainer>
+        <EntityType Name="TableMakanan">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="NamaMakanan" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Kalori" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Protein" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Karbohidrat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Lemak" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+          <Property Name="Berat" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+        </EntityType>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="DataMakananModelStoreContainer" CdmEntityContainer="ConnectDataMakanan">
+          <EntitySetMapping Name="TableMakanans">
+            <EntityTypeMapping TypeName="DataMakananModel.TableMakanan">
+              <MappingFragment StoreEntitySet="TableMakanan">
+                <ScalarProperty Name="Berat" ColumnName="Berat" />
+                <ScalarProperty Name="Lemak" ColumnName="Lemak" />
+                <ScalarProperty Name="Karbohidrat" ColumnName="Karbohidrat" />
+                <ScalarProperty Name="Protein" ColumnName="Protein" />
+                <ScalarProperty Name="Kalori" ColumnName="Kalori" />
+                <ScalarProperty Name="NamaMakanan" ColumnName="NamaMakanan" />
+                <ScalarProperty Name="Id" ColumnName="Id" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="false" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
