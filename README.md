@@ -1,5 +1,5 @@
 # iNutrition
-Tugas Akhir mata kuliah Pemrograman Berbasis Objek
+Tugas Akhir mata kuliah Pemrograman Berbasis Objek \n
 Prodi Teknologi Informasi 2019
 Departemen Teknik Elektro dan Teknologi Informasi
 Universitas Gadjah Mada, Indonesia
