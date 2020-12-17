@@ -13,8 +13,4 @@ Aplikasi ini disusun menggunakan database sqlite\
 agar client tidak perlu mendownload database engine seperti mssql yang ukurannya besar jika tidak memilikinya\
 sehingga aplikasi ini dapat bekerja di machine manapun yang dimiliki client.
 
-# Catatan Kontribusi
-Anggota Kelompok
-- Fachrizal Bayu Nugroho (19/446775/TK/49880)\
-Tidak ikut berpatisipasi aktif dalam mengerjakan project ini.\
-Tidak berkontribusi sedikitpun pada project ini.
+
